@@ -6,10 +6,10 @@ import Services from "./components/Services";
 export default function Home() {
   return (
     <div className="relative">
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <Services />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

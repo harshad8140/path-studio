@@ -22,24 +22,20 @@ const images = [
 
 export default function Portfolio() {
     return (
-        <div>
-            <Navbar />
-            <div className="py-16 px-6 max-w-7xl mx-auto">
-                <h1 className="text-5xl font-bold text-center mb-10">Portfolio</h1>
-                <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
-                    {images.map((img, idx) => (
-                        <div key={idx} className="relative w-full h-72 rounded-lg overflow-hidden">
-                            <Image
-                                src={img}
-                                alt={`Portfolio ${idx}`}
-                                fill
-                                className="object-cover"
-                            />
-                        </div>
-                    ))}
-                </div>
+        <div className="py-16 px-6 max-w-7xl mx-auto">
+            <h1 className="text-5xl font-bold text-center mb-10">Portfolio</h1>
+            <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
+                {images.map((img, idx) => (
+                    <div key={idx} className="relative w-full h-72 rounded-lg overflow-hidden">
+                        <Image
+                            src={img}
+                            alt={`Portfolio ${idx}`}
+                            fill
+                            className="object-cover"
+                        />
+                    </div>
+                ))}
             </div>
-            <Footer />
         </div>
     );
 }
